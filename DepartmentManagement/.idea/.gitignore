@@ -1,0 +1,8 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/../../../../../../../../../../../../:\Web\Java\java-advanced\Spring Toolls\Crud\Private\Lesson_Resource_11_CRUD (Search Paging Sorting Filter Validate) & Login Integrate_Frontend_Demo\12. Authorization\Backend\DepartmentManagement\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

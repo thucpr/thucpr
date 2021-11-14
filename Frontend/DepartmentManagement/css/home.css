@@ -1,0 +1,47 @@
+.image {
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 220px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background-position: center;
+}
+
+.image:hover {
+    cursor: pointer;
+}
+
+.boxfadein {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.box1 {
+    display: flex;
+    padding-top: 50px;
+    justify-content: center;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+}
+
+.image-fadeint {
+    width: 400px;
+    height: 170px;
+}
+
+.fadeint2 {
+    padding-left: 20px;
+}
+
+.mySlides {
+    display: none;
+}
+
+.imagenext2 {
+    padding-top: 10px;
+}
