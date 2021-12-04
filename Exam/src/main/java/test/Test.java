@@ -7,7 +7,7 @@ public class Test {
         // ở đây em đang sử dụng mỗi trường hợp một vòng lặp để tách ra cho rõ ràng ạ
         // nếu sử dụng cùng vòng lặp thì kết quả nó xen kẽ nhau ạ
 
-        System.out.println("Question1 **********************************************" +"\n");
+        System.out.println("Question1 **********************************************" + "\n");
 
         for (int i = 1; i < 100; i++) {
             if (i % 3 == 0) {
@@ -45,7 +45,7 @@ public class Test {
     }
 
 
-    public static String Question2() {
+    public static void Question2() {
 
         // Sử dụng ScannerUtils để Validate Input number đầu vào ạ
 
@@ -61,21 +61,20 @@ public class Test {
 
         if (n == 1) {
             for (int a = 1; a <= 9; a++) {
-
-                System.out.println(n + " x " + a + " = " + n * a + "     " + (n + 1) + " x " + a + " = " + (n + 1) * a + "    " + (n + 2) + " x " + a + " = " + (n + 2) * a);
+                System.out.println(String.format("%d * %d = %3d      %d * %d = %3d       %d * %d = %3d ", n, a, n * a, n + 1, a, (n + 1) * a, n + 2, a, (n + 2) * a));
             }
         }
 
 
         if (n == 2) {
             for (int b = 1; b <= 9; b++) {
-                System.out.println((n - 1) + " x " + b + " = " + (n - 1) * b + "   " + n + " x " + b + " = " + n * b + "    " + (n + 1) + " x " + b + " = " + (n + 1) * b);
+                System.out.println(String.format("%d * %d = %3d      %d * %d = %3d       %d * %d = %3d ", n - 1, b, (n - 1) * b, n, b, n * b, n + 1, b, (n + 1) * b));
             }
         }
 
-        else {
+        if (n == 3) {
             for (int c = 1; c <= 9; c++) {
-                System.out.println((n - 2) + " x " + c + " = " + (n - 2) * c + "    " + (n - 1) + " x " + c + " = " + (n - 1) * c + "   " + n + " x " + c + " = " + n * c);
+                System.out.println(String.format("%d * %d = %3d      %d * %d = %3d       %d * %d = %3d ", n - 2, c, (n - 2) * c, n - 1, c, (n - 1) * c, n, c, n * c));
             }
         }
 
@@ -84,19 +83,19 @@ public class Test {
 
         if (n1 == 4) {
             for (int d = 1; d <= 9; d++) {
-                System.out.println(n1 + " x " + d + " = " + n1 * d + "     " + (n1 + 1) + " x " + d + " = " + (n1 + 1) * d + "    " + (n1 + 2) + " x " + d + " = " + (n1 + 2) * d);
+                System.out.println(String.format("%d * %d = %3d      %d * %d = %3d       %d * %d = %3d ", n1, d, n1 * d, n1 + 1, d, (n1 + 1) * d, n1 + 2, d, (n1 + 2) * d));
             }
         }
 
         if (n1 == 5) {
             for (int e = 1; e <= 9; e++) {
-                System.out.println((n1 - 1) + " x " + e + " = " + (n1 - 1) * e + "   " + n1 + " x " + e + " = " + n1 * e + "    " + (n1 + 1) + " x " + e + " = " + (n1 + 1) * e);
+                System.out.println(String.format("%d * %d = %3d      %d * %d = %3d       %d * %d = %3d ", (n1 - 1), e, (n1 - 1) * e, n1, e, n1 * e, n1 + 1, e, (n1 + 1) * e));
             }
         }
 
-        else  {
+        if (n1 == 6) {
             for (int f = 1; f <= 9; f++) {
-                System.out.println((n1 - 2) + " x " + f + " = " + (n1 - 2) * f + "    " + (n1 - 1) + " x " + f + " = " + (n1 - 1) * f + "   " + n1 + " x " + f + " = " + n1 * f);
+                System.out.println(String.format("%d * %d = %3d      %d * %d = %3d       %d * %d = %3d ", n1 - 2, f, (n1 - 2) * f, n1 - 1, f, (n1 - 1) * f, n1, f, n1 * f));
             }
         }
 
@@ -104,26 +103,23 @@ public class Test {
 
         if (n2 == 7) {
             for (int g = 1; g <= 9; g++) {
-                System.out.println(n2 + " x " + g + " = " + n2 * g + "     " + (n2 + 1) + " x " + g + " = " + (n2 + 1) * g + "    " + (n2 + 2) + " x " + g + " = " + (n2 + 2) * g);
+                System.out.println(String.format("%d * %d = %3d      %d * %d = %3d       %d * %d = %3d ", n2, g, n2 * g, n2 + 1, g, (n2 + 1) * g, n2 + 2, g, (n2 + 2) * g));
             }
         }
 
 
         if (n2 == 8) {
             for (int h = 1; h <= 9; h++) {
-                System.out.println((n2 - 1) + " x " + h + " = " + (n2 - 1) * h + "   " + n2 + " x " + h + " = " + n2 * h + "    " + (n2 + 1) + " x " + h + " = " + (n2 + 1) * h);
+                System.out.println(String.format("%d * %d = %3d      %d * %d = %3d       %d * %d = %3d ", (n2 - 1), h, (n2 - 1) * h, n2, h, n2 * h, n2 + 1, h, (n2 + 1) * h));
             }
-        }
 
 
-
-        else  {
-            for (int k = 1; k <= 9; k++) {
-                System.out.println((n2 - 2) + " x " + k + " = " + (n2 - 2) * k + "    " + (n2 - 1) + " x " + k + " = " + (n2 - 1) * k + "   " + n2 + " x " + k + " = " + n2 * k);
+            if (n2 == 9) {
+                for (int k = 1; k <= 9; k++) {
+                    System.out.println(String.format("%d * %d = %3d      %d * %d = %3d       %d * %d = %3d ", n2 - 2, k, (n2 - 2) * k, n2 - 1, k, (n2 - 1) * k, n2, k, n2 * k));
+                }
             }
+
         }
-
-
-        return null;
     }
 }
