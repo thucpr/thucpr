@@ -112,7 +112,7 @@ public class Test {
             for (int h = 1; h <= 9; h++) {
                 System.out.println(String.format("%d * %d = %3d      %d * %d = %3d       %d * %d = %3d ", (n2 - 1), h, (n2 - 1) * h, n2, h, n2 * h, n2 + 1, h, (n2 + 1) * h));
             }
-
+        }
 
             if (n2 == 9) {
                 for (int k = 1; k <= 9; k++) {
@@ -122,4 +122,3 @@ public class Test {
 
         }
     }
-}
